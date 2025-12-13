@@ -27,7 +27,7 @@ const AboutMe = () => {
                   {""} Get in Touch
                 </a>
                 <a
-                  href="/Ritish-Kumar-Singh.pdf"
+                  href="/Ritish_Kumar_Singh.pdf"
                   download="Ritish-Kumar-Singh"
                   className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-black transition-all duration-300 hover:scale-105 xfont-medium"
                 >
