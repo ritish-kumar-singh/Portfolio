@@ -1,7 +1,7 @@
 "use client";
 
 import {
-    Github,
+  Github,
   Instagram,
   Linkedin,
   Mail,
@@ -17,7 +17,7 @@ import emailjs from '@emailjs/browser';
 
 
 const ContactSection = () => {
-  const {toast}=useToast();
+  const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e) => {
@@ -32,7 +32,7 @@ const ContactSection = () => {
     }, 1500);
   };
 
-    const form = useRef();
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -59,35 +59,35 @@ const ContactSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-         Have a project in mind, want to collaborate, or looking to connect? I’m always open to exciting opportunities and meaningful tech collaborations—feel free to reach out!
+          Have a project in mind, want to collaborate, or looking to connect? I’m always open to exciting opportunities and meaningful tech collaborations—feel free to reach out!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6"> Contact Information</h3>
 
-            <div className="space-y-6 justify-center">
+            <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <PersonStanding className="h-6 w-6 text-primary" />
                 </div>
-                 <div>
+                <div className="text-left">
                   <h4 className="font-medium">Name</h4>
-                  <span className="text-muted-foreground hover:text-primary transition-colors">
+                  <span className="text-muted-foreground">
                     Ritish Kumar Singh
                   </span>
                 </div>
               </div>
-             
+
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
-                <div>
+                <div className="text-left">
                   <h4 className="font-medium">Email</h4>
                   <a
                     href="mailto:ritish1333@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="block text-muted-foreground hover:text-primary transition-colors"
                   >
                     ritish1333@gmail.com
                   </a>
@@ -98,9 +98,9 @@ const ContactSection = () => {
                 <div className="p-3 rounded-full bg-primary/10">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
-                <div>
+                <div className="text-left">
                   <h4 className="font-medium">Location</h4>
-                  <span className="text-muted-foreground hover:text-primary transition-colors">
+                  <span className="block text-muted-foreground">
                     Delhi, India
                   </span>
                 </div>
