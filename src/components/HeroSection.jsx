@@ -20,9 +20,9 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in">
-            Software Engineer focused on building scalable, high-performance web applications.
-            <br />
-            I work across the full software development lifecycle, building production-ready solutions.
+            Software Engineer | Full-Stack Web & Enterprise Backend
+<br />
+I bridge the gap between highly reliable, data-driven enterprise systems and responsive, user-centric web applications. 
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">

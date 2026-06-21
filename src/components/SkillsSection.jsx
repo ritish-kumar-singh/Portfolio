@@ -3,41 +3,59 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Languages
-  { name: "HTML", img: "/html.png", category: "languages" },
-  { name: "CSS", img: "/css.png", category: "languages" },
-  { name: "JavaScript", img: "/javascript.png", category: "languages" },
   { name: "Java", img: "/java.png", category: "languages" },
   { name: "Python", img: "/python.png", category: "languages" },
+  { name: "JavaScript", img: "/javascript.png", category: "languages" },
+  { name: "SQL", img: "/sql.png", category: "languages" },
+  { name: "HTML", img: "/html.png", category: "languages" },
+  { name: "CSS", img: "/css.png", category: "languages" },
+
+  // Enterprise & Mainframe
+  { name: "IBM i (AS/400)", img: "/ibmi.jpeg", category: "enterprise" },
+  { name: "DB2", img: "/db2.png", category: "enterprise" },
+  { name: "ILE-RPG", img: "/rpg.jpeg", category: "enterprise" },
+  { name: "COBOL", img: "/cobol.jpeg", category: "enterprise" },
+  { name: "JCL", img: "/jcl.png", category: "enterprise" },
+  { name: "CL-Programming", img: "/cl.png", category: "enterprise" },
+  { name: "CICS", img: "/cics.png", category: "enterprise" },
 
   //Libraries
   { name: "React.js", img: "/react.png", category: "libraries" },
   { name: "Mongoose", img: "/mongoose.png", category: "libraries" },
-  { name: "Numpy", img: "/numpy.png", category: "libraries" },
   { name: "Pandas", img: "/pandas.jpg", category: "libraries" },
+  { name: "Numpy", img: "/numpy.png", category: "libraries" },
   { name: "Matplotlib", img: "/matplotlib.png", category: "libraries" },
-  { name: "Seaborn", img: "/seaborn.png", category: "libraries" },
   { name: "Scikit-learn", img: "/scikitlearn.png", category: "libraries" },
 
   //Frameworks
+  { name: "Node.js", img: "/nodejs.png", category: "frameworks" },
+  { name: "Express.js", img: "/express.png", category: "frameworks" },
   { name: "Tailwind CSS", img: "/tailwind.png", category: "frameworks" },
   { name: "Java Collections", img: "/javacollection.jpeg", category: "frameworks" },
-  { name: "Express.js", img: "/express.png", category: "frameworks" },
-  { name: "Node.js", img: "/nodejs.png", category: "frameworks" },
 
   // Databases
   { name: "MongoDB", img: "/mongodb.png", category: "databases" },
   { name: "MySQL", img: "/mysql.jpg", category: "databases" },
-  { name: "Firebase", img: "/firebase.png", category: "databases" },
+    { name: "DB2", img: "/db2.png", category: "databases" },
 
   // Tools
   { name: "Git", img: "/git.png", category: "tools" },
   { name: "GitHub", img: "/github.jpg", category: "tools" },
   { name: "Visual Studio Code", img: "/vscode.png", category: "tools" },
+  { name: "Postman", img: "/postman.png", category: "tools" },
   { name: "Vercel", img: "/vercel.png", category: "tools" },
   { name: "Render", img: "/render.jpg", category: "tools" },
 ];
 
-const categories = ["all", "languages", "libraries", "frameworks", "databases", "tools"];
+const categories = [
+  "all", 
+  "languages", 
+  "enterprise", 
+  "libraries", 
+  "frameworks", 
+  "databases", 
+  "tools"
+];
 
 const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -93,5 +111,3 @@ const SkillsSection = () => {
 };
 
 export default SkillsSection;
-
-

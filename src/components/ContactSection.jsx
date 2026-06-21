@@ -59,7 +59,7 @@ const ContactSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind, want to collaborate, or looking to connect? I’m always open to exciting opportunities and meaningful tech collaborations—feel free to reach out!
+          Looking to build something great? I'm always open to exciting tech collaborations and new opportunities. Reach out!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -101,7 +101,7 @@ const ContactSection = () => {
                 <div className="text-left">
                   <h4 className="font-medium">Location</h4>
                   <span className="block text-muted-foreground">
-                    Delhi, India
+                    Hyderabad, Telangana, India
                   </span>
                 </div>
               </div>

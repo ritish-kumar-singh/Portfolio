@@ -5,30 +5,30 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "AI Studio",
-      description: "A one-stop destination for creative and productive AI tools.",
-      image: "/projects/AIStudio.png",
-      tags: ["React.js", "TailwindCSS", "MongoDB"],
-      // demoUrl: "https://ai-studio-project.vercel.app/",
-      github: "https://github.com/ritish-kumar-singh/AI-Studio-Project",
+      title: "QuickCart E-Commerce",
+      description: "A robust, full-stack e-commerce architecture handling 500+ concurrent user transactions with secure Razorpay integration and optimized REST APIs.",
+      image: "/quickcart.png", // Make sure to add this image
+      tags: ["MERN Stack", "REST APIs", "Razorpay"],
+      // demoUrl: "https://your-demo-link.vercel.app/",
+      // github: "https://github.com/ritish-kumar-singh/QuickCart", // Update if different
     },
     {
       id: 2,
-      title: "EduWeb",
-      description: "A platform for exploring and accessing quality educational resources.",
-      image: "/projects/EduWeb.png",
-      tags: ["HTML", "CSS", "JavaScript"],
-      // demoUrl: "https://edu-web-delta.vercel.app/#home",
-      github: "https://github.com/ritish-kumar-singh/EduWeb",
+      title: "RAG AI Teaching Assistant",
+      description: "An AI-powered search and generation system indexing course transcripts. Utilizes vector embeddings to reduce query resolution time by 75%.",
+      image: "/rag.png", // Make sure to add this image
+      tags: ["Python", "LangChain", "Vector DBs"],
+      // demoUrl: "https://your-demo-link.vercel.app/",
+      // github: "https://github.com/ritish-kumar-singh/RAG-Teaching-Assistant", // Update if different
     },
     {
       id: 3,
-      title: "Iris Classifier",
-      description: "A real-time companion for weather tracking.",
-      image: "/projects/iris-flower-classification.png",
-      tags: ["Python", "Scikit-learn", "Pandas"],
-      // demoUrl: "https://razor-pay-clone-sigma.vercel.app/",
-      github: "https://github.com/ritish-kumar-singh/Iris-Classifier-Project",
+      title: "AI Studio",
+      description: "A unified AI platform integrating the Gemini API for dynamic content creation, travel planning, and simulation, successfully handling 500+ daily requests.",
+      image: "/aistudio.png",
+      tags: ["React.js", "Node.js","Express.js", "Gemini API"],
+      // demoUrl: "https://ai-studio-project.vercel.app/",
+      // github: "https://github.com/ritish-kumar-singh/AI-Studio-Project",
     },
   ];
 
@@ -41,17 +41,20 @@ const ProjectsSection = () => {
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          crafted to solve complex problems with a focus on performance, scalability, and user experience.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
-            <a href={project.github} target="_blank">
-              <div
-                key={key}
-                className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
-              >
-                <div className="h-48 overflow-hidden">
+          {projects.map((project) => (
+            <a 
+              key={project.id} 
+              href={project.github} 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover h-full flex flex-col">
+                <div className="h-48 overflow-hidden shrink-0">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -59,7 +62,7 @@ const ProjectsSection = () => {
                   />
                 </div>
 
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, index) => (
                       <span
@@ -69,34 +72,37 @@ const ProjectsSection = () => {
                         {tag}
                       </span>
                     ))}
-
                   </div>
 
-                  <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-4">
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <p className="text-muted-foreground text-sm mb-4 flex-grow">
                     {project.description}
                   </p>
 
-                  {/* <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
-                  </div>
-                </div> */}
+                  {/* Optional: Uncomment this block if you want the explicit GitHub/Demo icons back later
+                  <div className="flex justify-between items-center mt-auto pt-4 border-t border-border/50">
+                    <div className="flex space-x-3">
+                      {project.demoUrl && (
+                        <a
+                          href={project.demoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                        >
+                          <ExternalLink size={20} />
+                        </a>
+                      )}
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <Github size={20} />
+                      </a>
+                    </div>
+                  </div> 
+                  */}
                 </div>
               </div>
             </a>
@@ -110,7 +116,7 @@ const ProjectsSection = () => {
             rel="noopener noreferrer"
             href="https://github.com/ritish-kumar-singh"
           >
-            Check My Github <ArrowDown size={16} />
+            Check My GitHub <ArrowDown size={16} />
           </a>
         </div>
       </div>
@@ -119,4 +125,3 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
-

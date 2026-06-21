@@ -16,10 +16,10 @@ const AboutMe = () => {
                 Software Engineer & Problem Solver
               </h3>
               <p className="text-muted-foreground text-justify">
-                I’m a software engineer focused on building scalable, user-centric web applications. I design and develop production-ready solutions with clean architecture, strong fundamentals, and a problem-solving mindset.
+                I’m a software engineer who bridges the gap between highly reliable, data-driven enterprise systems and scalable, user-centric web applications. Currently, I work as a Systems Engineer at Infosys, managing mission-critical backend solutions and massive DB2 databases on the IBM i platform.
               </p>
               <p className="text-muted-foreground text-justify">
-                I enjoy working on challenging problems, improving system design, and continuously refining code quality to deliver reliable and maintainable software.
+                Beyond enterprise architecture, I specialize in the MERN stack and Python. I enjoy engineering everything from robust e-commerce platforms to AI-powered applications, continuously refining system design and code quality to deliver reliable, maintainable software.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -42,9 +42,9 @@ const AboutMe = () => {
                     <Code className="h-6 w-6 text-primary" />
                   </div>
                   <div className="text-left">
-                    <h4 className="font-semibold text-lg">Web Development</h4>
+                    <h4 className="font-semibold text-lg">Full-Stack Web Development</h4>
                     <p className="text-muted-foreground">
-                      Building scalable, high-performance web applications using modern software engineering practices.
+                      Building scalable, high-performance web applications and RESTful APIs using the MERN stack.
                     </p>
                   </div>
                 </div>
@@ -55,9 +55,9 @@ const AboutMe = () => {
                     <User className="h-6 w-6 text-primary" />
                   </div>
                   <div className="text-left">
-                    <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                    <h4 className="font-semibold text-lg">Enterprise Backend Systems</h4>
                     <p className="text-muted-foreground">
-                      Creating intuitive, accessible interfaces with a strong focus on usability and performance.
+                      Architecting highly reliable backend solutions, automating workflows, and managing massive relational databases.
                     </p>
                   </div>
                 </div>
@@ -68,9 +68,9 @@ const AboutMe = () => {
                     <Briefcase className="h-6 w-6 text-primary" />
                   </div>
                   <div className="text-left">
-                    <h4 className="font-semibold text-lg">Software Development</h4>
+                    <h4 className="font-semibold text-lg">Data Science & AI</h4>
                     <p className="text-muted-foreground">
-                      Delivering end-to-end software solutions from design and development to deployment.
+                      Integrating generative AI, vector databases, and machine learning models to build smart, data-driven applications.
                     </p>
                   </div>
                 </div>
